@@ -1,0 +1,12 @@
+<h3> To know number of days in month, enter month number </h3>
+<script>
+function daysInMonth (month, year) {
+  return new Date(year, month, 0).getDate();
+}
+var month = window.prompt("Enter month: ");
+if(month >=1 && month<=12){
+	window.alert("Number of days in month are: " + daysInMonth(month, 2021));
+}else{
+	window.alert("Invalid input");	
+}
+</script>
